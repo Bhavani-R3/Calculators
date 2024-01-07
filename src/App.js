@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Simple from './component/SimpleInterest';
+import CompoundInterest from './component/CompoundInterest';
+import Bmi from './component/Bmi';
+import SimpleInt from './component/SimpleInt';
+import SimpleObject from './component/SimpleObject';
+import LoanEmi from './component/LoanEmi';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Simple/> 
+      <CompoundInterest/> 
+      <Bmi/> 
+      <SimpleInt/> 
+      <SimpleObject/> */}
+      <LoanEmi/>
     </div>
   );
 }
