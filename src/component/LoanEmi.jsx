@@ -17,8 +17,8 @@ function LoanEmi() {
 
     const calculate = (e) => {
         e.preventDefault();
-        let r = (ry / 12)/ 100
-        setEmi(inp.p * r * Math.pow((1+ r), inp.t) / (Math.pow((1+r), inp.t - r)))
+        let r = (inp.ry / 12) / 100
+        setEmi(inp.p * r * (Math.pow((1+ r), inp.t)) / (Math.pow((1+r), inp.t - r)))
         setTotal(inp.p * (1 + ((inp.ry/100) * inp.t)));
     }
 
